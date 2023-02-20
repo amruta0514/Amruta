@@ -11,7 +11,8 @@ export default class Page {
     */
     public open (path: string) {
         //return browser.url(`https://the-internet.herokuapp.com/${path}`)
-       return browser.url('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        
+       return browser.url('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
         
     }
     

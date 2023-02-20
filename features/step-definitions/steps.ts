@@ -20,33 +20,22 @@ Given(/^I am on the (\w+) page$/, async (page) => {
 When(/^I login with (\w+) and (.+)$/, async (username, password) => {
     console.log("****in when");
     await LoginPage.login(username, password)
-
-});
-//for valid user <dashboard>
-Then(/^I should see a (.+)$/, async (dashboard) => {
-    
-    expect(await HomePage.label).toHaveTextContaining(dashboard);
-   
-    
 });
 
+Then(/^I verify (.+)$/, async (dashboard) => {
+       expect(await HomePage.dashboardHeader).toHaveTextContaining(dashboard);
+   });
 
 // for invalid user <errorMessage>
-Then (/^ I should see a message(<.+>)$/,async(errorMessage)=>{
+/*Then (/^ I should see a message(<.+>)$/,async(errorMessage)=>{
 
     expect(await LoginPage.errorMessage).toHaveTextContaining(errorMessage);
 
-
-});
-
-
-/*Then(/^I should see a flash message saying (.*)$/, async (dashboard) => {
-    //await expect(SecurePage.flashAlert).toBeExisting();
-    //await expect(SecurePage.flashAlert).toHaveTextContaining(message);
-    console.log("******"+HomePage.label);
-    console.log("******"+dashboard);
-    await expect(HomePage.label).toHaveTextContaining(dashboard);
-    
-    
 });*/
+
+
+
+    
+    
+
 
