@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1676791581758' stop='1676791583047'>
+    <name>The Internet Guinea Pig Website: As a Invalod user, I shouldnot log into the Website</name>
+    <title>The Internet Guinea Pig Website: As a Invalod user, I shouldnot log into the Website</title>
+    <test-cases>
+        <test-case start='1676791581759' status='passed' stop='1676791581759'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.104'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1676791581759' status='passed' stop='1676791583041'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.104'/>
+            </parameters>
+            <steps>
+                <step start='1676791581760' status='passed' stop='1676791581782'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d00ceada-ce7a-472f-8d0c-0a6d78a0b843-attachment.json' type='application/json' size='81'/>
+                        <attachment title='Response' source='429b88cb-8c2b-4a34-b504-136e6867abc6-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1676791582236' status='passed' stop='1676791583040'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e37a0d2f-7f9d-4376-bd42-2063e43109e3-attachment.json' type='application/json' size='63'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1676791583041' status='broken' stop='1676791583043'>
+            <name>When I login with invalid  Admin and Admin123</name>
+            <title>When I login with invalid  Admin and Admin123</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.104'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I login with invalid  Admin and Admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I login with invalid  Admin and Admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\WiproAnz\features\login.feature):1:1
+                	at Scenario(As a Invalod user, I shouldnot log into the Website):14:5
+                	at Step(I login with invalid  &lt;username> and &lt;password>):17:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1676791583044' status='broken' stop='1676791583045'>
+            <name>Then I should see an  &lt;errorMessage></name>
+            <title>Then I should see an  &lt;errorMessage></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.104'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I should see an  &lt;errorMessage>" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I should see an  &lt;errorMessage>" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\WiproAnz\features\login.feature):1:1
+                	at Scenario(As a Invalod user, I shouldnot log into the Website):14:5
+                	at Step(I should see an  &lt;errorMessage>):18:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1676791583046' status='passed' stop='1676791583047'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.104'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
